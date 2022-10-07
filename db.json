@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "6baa08c3-7e5f-4472-a2ec-14c6c0182caa",
+		"name": "BBI_AEO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user_identification",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "34.121.236.64:5006/check_user?domain_sessionid=b378921e-5954-4372-843f-252ac97155e8",
+					"host": [
+						"34",
+						"121",
+						"236",
+						"64"
+					],
+					"port": "5006",
+					"path": [
+						"check_user"
+					],
+					"query": [
+						{
+							"key": "domain_sessionid",
+							"value": "b378921e-5954-4372-843f-252ac97155e8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_identification Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "34.121.236.64:5007/check_userid?domain_sessionid=684c97df-d6e7-4894-8691-178bab53fd70",
+					"host": [
+						"34",
+						"121",
+						"236",
+						"64"
+					],
+					"port": "5007",
+					"path": [
+						"check_userid"
+					],
+					"query": [
+						{
+							"key": "domain_sessionid",
+							"value": "684c97df-d6e7-4894-8691-178bab53fd70"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "jerry@aeo.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "apples",
+							"type": "text"
+						},
+						{
+							"key": "submit",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "34.121.236.64:5006/signup",
+					"host": [
+						"34",
+						"121",
+						"236",
+						"64"
+					],
+					"port": "5006",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "pavann@bbinsight.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "abcd1234#",
+							"type": "text"
+						},
+						{
+							"key": "submit",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "34.121.236.64:5006/signin",
+					"host": [
+						"34",
+						"121",
+						"236",
+						"64"
+					],
+					"port": "5006",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "34.121.236.64:5006/signout",
+					"host": [
+						"34",
+						"121",
+						"236",
+						"64"
+					],
+					"port": "5006",
+					"path": [
+						"signout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
